@@ -1,0 +1,18 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window title="Modal Customer" border="normal" id="mdlCustomer" apply="id.endang.hellozk.controller.ModalCustomerController"
+	width="500px" height="300px" closable="true" action="show: slideDown({duration: 1000}); hide: slideUp({duration: 300})">
+
+		<groupbox hflex="1">
+			<listbox id="tabel" hflex="1" height="350px">
+				<listhead>
+					<listheader label="No" width="40px" />
+					<listheader label="No. Rekening" />
+					<listheader label="Nama" />
+					<listheader label="Tgl Lahir" />
+				</listhead>
+			</listbox>
+		</groupbox>
+
+	</window>
+</zk>

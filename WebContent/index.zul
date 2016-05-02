@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+	<vlayout apply="id.endang.hellozk.controller.CustomerController"
+		hflex="1" spacing="3px">
+		<groupbox>
+			<caption label="Laporan" />
+			<grid width="100%" style="border:none" hflex="1">
+				<columns>
+					<column />
+					<column />
+					<column />
+					<column />
+					<column />
+					<column />
+
+				</columns>
+				<rows>
+					<row>
+						<button hflex="1" id="btnReport" label="Report" />
+
+						<button hflex="1" id="btnCari" label="Cari" />
+					</row>
+				</rows>
+			</grid>
+		</groupbox>
+		<hlayout>
+			<groupbox hflex="1">
+
+				<grid width="100%" style="border:none">
+					<columns>
+						<column width="150px" />
+						<column />
+						<column />
+						<column />
+					</columns>
+					<rows>
+
+						<row>
+							<label value="No Rekening" />
+							<cell colspan="1">
+								<textbox hflex="1" id="txtAccNbr"
+									sclass="input" maxlength="10" />
+							</cell>
+
+						</row>
+						<row>
+							<label value="Nama" />
+							<cell colspan="1">
+								<textbox hflex="1" id="txtAccName"
+									sclass="input" />
+							</cell>
+						</row>
+						<row>
+							<label value="Tgl Lahir" />
+							<cell colspan="1">
+								<datebox hflex="1" id="txtBirthday"
+									sclass="input" format="yyyy-MM-dd" />
+							</cell>
+						</row>
+						<row>
+							<label value="Alamat" />
+							<cell colspan="2">
+								<textbox hflex="1" id="txtAddress"
+									sclass="input" rows="3" tabindex="10" />
+							</cell>
+						</row>
+						<row>
+							<label value="Email" />
+							<cell colspan="2">
+								<textbox hflex="1" id="txtEmail"
+									sclass="input" />
+							</cell>
+						</row>
+						<row>
+							<label value="Telp" />
+							<cell colspan="1">
+								<textbox hflex="1" id="txtPhone"
+									sclass="input" />
+							</cell>
+						</row>
+					</rows>
+				</grid>
+			</groupbox>
+
+			<groupbox hflex="1">
+
+				<listbox checkmark="true" multiple="true" id="tblData" hflex="1" height="350px">
+					<listhead>
+						<listheader label="No" width="40px" />
+						<listheader label="Pilih" width="80px" align="center" />
+						<listheader label="No. Rekening" />
+						<listheader label="Nama" />
+						<listheader label="Tgl Lahir" />
+						
+					</listhead>
+				</listbox>
+
+			</groupbox>
+			
+		</hlayout>
+		<groupbox>
+			<button label="Reset" id="btnReset" />
+			<space width="5px" />
+			<button label="Save" id="btnSave" />
+			<space width="5px" />
+			<button label="Delete" id="btnDelete" />
+		</groupbox>
+
+	</vlayout>
+
+</zk>
